@@ -1,16 +1,16 @@
 1. What is a windowed dataset?
 
-    - [ ] The time series aligned to a fixed shape
     - [ ] A consistent set of subsets of a time series
     - [ ] There’s no such thing
     - [x] A fixed-size subset of a time series
+    - [ ] The time series aligned to a fixed shape
 
 2.  What does ‘drop_remainder=true’ do?
 
-    - [ ] It ensures that the data is all the same shape
+    - [ ] It ensures that all rows in the data window are the same length by adding data
     - [ ] It ensures that all data is used
     - [x] It ensures that all rows in the data window are the same length by cropping data
-    - [ ] It ensures that all rows in the data window are the same length by adding data
+    - [ ] It ensures that the data is all the same shape
 
 3. What’s the correct line of code to split an n column window into n-1 columns for features and 1 column for a label?
 
@@ -21,9 +21,9 @@
 
 4. What does MSE stand for?
 
+    - [ ] Mean Slight error
     - [ ] Mean Second error
     - [x] Mean Squared error
-    - [ ] Mean Slight error
     - [ ] Mean Series error
 
 5. What does MAE stand for?
@@ -54,17 +54,17 @@
 
 7. If you want to inspect the learned parameters in a layer after training, what’s a good technique to use?
 
-    - [x] Assign a variable to the layer and add it to the model using that variable. Inspect its properties after training
-    - [ ] Run the model with unit data and inspect the output for that layer
     - [ ] Iterate through the layers dataset of the model to find the layer you want
     - [ ] Decompile the model and inspect the parameter set for that layer
-
+    - [x] Assign a variable to the layer and add it to the model using that variable. Inspect its properties after training
+    - [ ] Run the model with unit data and inspect the output for that layer
+  
 8. How do you set the learning rate of the SGD optimizer? 
 
     - [ ] Use the Rate property 
     - [ ] Use the RateOfLearning property
+    - [x] Use the learning_rate property
     - [ ] You can’t set it
-    - [x] Use the lr property
 
 9. If you want to amend the learning rate of the optimizer on the fly, after each epoch, what do you do?
 
